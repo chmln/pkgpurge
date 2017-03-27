@@ -1,0 +1,21 @@
+{
+  "name": "pkgpurge",
+  "version": "0.0.2",
+  "description": "Uninstall npm packages by reg exp",
+  "main": "index.js",
+  "cli": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "uninstall",
+    "regex"
+  ],
+  "author": "chmln <gregory.mkv@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "yesno": "^0.0.1"
+  }
+}
