@@ -30,9 +30,6 @@ if (process.argv[3]) {
 	catch (e) { return console.error(`Error: no such directory: ${process.argv[3]}`); }
 }
 
-
-
-
 const dir = process.cwd();
 const regex = new RegExp(process.argv[2]);
 
@@ -60,5 +57,7 @@ function removePackages(packageList) {
 		const removal = err
 			? spawn("npm", ['uninstall'].concat(packageList), {stdio:'inherit'})
 			: spawn("yarn", ['remove'].concat(packageList), {stdio:'inherit'});
+
+		removal.on('close', code => process.exit(code));
 	});
 }
