@@ -1,6 +1,6 @@
 {
   "name": "pkgpurge",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Uninstall npm packages by reg exp",
   "main": "index.js",
   "cli": "index.js",
